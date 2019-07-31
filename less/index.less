@@ -53,9 +53,95 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+img{
+	width: 100%;
 }
 
+/*
+VARIABLES
+*/
 
+/*
+Mobile first
+*/
 
+@media(min-width: 2px){
+	header{
+		nav{
+			display: flex;
+			flex-direction: column;
+			a{
+				text-decoration: none;
+				color: darkgray;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 8vh;
+				width: 100%;
+
+				&:hover{
+					color: black;
+				}
+			}
+		}
+		article{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			section{
+				width: 75%;
+				padding: 3vh;
+
+				h1{
+					text-align: center;
+					font-size: 10vw;
+				}
+				h2{
+					text-align: center;
+					font-size: 6vw;
+				}
+			}
+		}
+		.card{
+			a{
+				text-decoration: none;
+				color: black;
+			}
+			h2, .card-bottom{
+				text-align: center;
+				font-size: 8vw;
+				padding: 2vh 3vw;
+				color: white;
+				background-color: darkgray;
+				border-radius: 5vw 5vw 0px 0px;
+			}
+			p{
+				padding: 2vw;
+				text-align: justify;
+				border: 1px solid darkgray;
+			}
+			.card-bottom{
+				font-size: 6vw;
+				border-radius: 0px 0px 5vw 5vw;
+			}
+		}
+	}
+	
+}
+
+@media(min-width: 480px){
+
+}
+
+@media(min-width: 780px){
+
+}
+
+@media(min-width: 990px){
+
+}
+
+@media(min-width: 1200px){
+
+}

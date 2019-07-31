@@ -130,10 +130,70 @@ table {
 * {
   box-sizing: border-box;
 }
-html,
-body {
-  height: 100%;
+img {
+  width: 100%;
 }
-html {
-  background-color: red;
+/*
+VARIABLES
+*/
+/*
+Mobile first
+*/
+@media (min-width: 2px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
+  header nav a {
+    text-decoration: none;
+    color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 100%;
+  }
+  header nav a:hover {
+    color: black;
+  }
+  header article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header article section {
+    width: 75%;
+    padding: 3vh;
+  }
+  header article section h1 {
+    text-align: center;
+    font-size: 10vw;
+  }
+  header article section h2 {
+    text-align: center;
+    font-size: 6vw;
+  }
+  header .card a {
+    text-decoration: none;
+    color: black;
+  }
+  header .card h2,
+  header .card .card-bottom {
+    text-align: center;
+    font-size: 8vw;
+    padding: 2vh 3vw;
+    color: white;
+    background-color: darkgray;
+    border-radius: 5vw 5vw 0px 0px;
+  }
+  header .card p {
+    padding: 2vw;
+    text-align: justify;
+    border: 1px solid darkgray;
+  }
+  header .card .card-bottom {
+    font-size: 6vw;
+    border-radius: 0px 0px 5vw 5vw;
+  }
 }

@@ -66,11 +66,30 @@ Mobile first
 */
 
 @media(min-width: 2px){
+	article{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		section{
+			width: 75%;
+			padding: 3vh;
+			h1{
+				text-align: center;
+				font-size: 10vw;
+			}
+			h2{
+				text-align: center;
+				font-size: 6vw;
+			}
+		}
+	}
 	header{
 		nav{
 			display: flex;
 			flex-direction: column;
 			a{
+				font-size: 5vw;
 				text-decoration: none;
 				color: darkgray;
 				display: flex;
@@ -84,46 +103,44 @@ Mobile first
 				}
 			}
 		}
-		article{
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			section{
-				width: 75%;
-				padding: 3vh;
-
-				h1{
-					text-align: center;
-					font-size: 10vw;
-				}
-				h2{
-					text-align: center;
-					font-size: 6vw;
-				}
+	}
+	.card{
+		a{
+			text-decoration: none;
+			color: black;
+			&:hover{
+				transform: scale(1.2)
 			}
 		}
-		.card{
-			a{
-				text-decoration: none;
-				color: black;
-			}
-			h2, .card-bottom{
-				text-align: center;
-				font-size: 8vw;
-				padding: 2vh 3vw;
-				color: white;
-				background-color: darkgray;
-				border-radius: 5vw 5vw 0px 0px;
-			}
-			p{
-				padding: 2vw;
-				text-align: justify;
-				border: 1px solid darkgray;
-			}
-			.card-bottom{
-				font-size: 6vw;
-				border-radius: 0px 0px 5vw 5vw;
+		
+		h2, .card-bottom{
+			text-align: center;
+			font-size: 8vw;
+			padding: 2vh 3vw;
+			color: white;
+			background-color: darkgray;
+			border-radius: 5vw 5vw 0px 0px;
+		}
+		h3{
+			font-size: 5vw;
+			padding: 2vw;
+			background-color: lightgray;
+		}
+		p{
+			padding: 2vw;
+			text-align: justify;
+			border: 1px solid darkgray;
+		}
+		.card-bottom{
+			font-size: 6vw;
+			border-radius: 0px 0px 5vw 5vw;
+		}
+	}
+	main{
+		text-align: justify;
+		article{
+			secion{
+				
 			}
 		}
 	}

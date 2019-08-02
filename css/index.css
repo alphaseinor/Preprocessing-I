@@ -137,6 +137,9 @@ img {
 VARIABLES
 */
 /*
+Mix-Ins
+*/
+/*
 Mobile first
 */
 @media (min-width: 2px) {
@@ -144,10 +147,10 @@ Mobile first
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     align-items: center;
   }
   article section {
-    width: 75%;
     padding: 3vh;
   }
   article section h1 {
@@ -157,6 +160,9 @@ Mobile first
   article section h2 {
     text-align: center;
     font-size: 6vw;
+  }
+  article h2 {
+    font-size: 8vw;
   }
   header nav {
     display: flex;
@@ -174,6 +180,9 @@ Mobile first
   }
   header nav a:hover {
     color: black;
+  }
+  header img {
+    border-radius: 1rem;
   }
   .card a {
     text-decoration: none;
@@ -200,6 +209,7 @@ Mobile first
     padding: 2vw;
     text-align: justify;
     border: 1px solid darkgray;
+    font-size: 4vw;
   }
   .card .card-bottom {
     font-size: 6vw;
@@ -207,5 +217,67 @@ Mobile first
   }
   main {
     text-align: justify;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+  footer h3 {
+    font-size: 3vw;
+  }
+}
+/*
+Tablet
+*/
+@media (min-width: 500px) {
+  header nav {
+    flex-direction: row;
+  }
+}
+/*
+Desktop
+*/
+@media (min-width: 800px) {
+  header nav a {
+    font-size: 2vw;
+  }
+  header article {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  header article section {
+    width: 50vw;
+  }
+  header article section h2 {
+    padding-top: 1vh;
+    font-size: 4vw;
+  }
+  header article section img {
+    border-radius: 50%;
+  }
+  .card h2,
+  .card .card-bottom {
+    font-size: 4vw;
+  }
+  .card h3 {
+    font-size: 3vw;
+  }
+  .card p {
+    font-size: 2.5vw;
+  }
+  main .skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main .skills section {
+    width: 30vw;
+  }
+  main .skills section h3 {
+    width: 100%;
+  }
+  footer h3 {
+    font-size: 1.5vw;
   }
 }

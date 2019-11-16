@@ -1,1 +1,283 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+/*
+VARIABLES
+*/
+/*
+Mix-Ins
+*/
+/*
+Mobile first
+*/
+@media (min-width: 2px) {
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  article section {
+    padding: 3vh;
+  }
+  article section h1 {
+    text-align: center;
+    font-size: 10vw;
+  }
+  article section h2 {
+    text-align: center;
+    font-size: 6vw;
+  }
+  article h2 {
+    font-size: 8vw;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
+  header nav a {
+    font-size: 5vw;
+    text-decoration: none;
+    color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 100%;
+  }
+  header nav a:hover {
+    color: black;
+  }
+  header img {
+    border-radius: 1rem;
+  }
+  .card a {
+    text-decoration: none;
+    color: black;
+  }
+  .card a:hover {
+    transform: scale(1.2);
+  }
+  .card h2,
+  .card .card-bottom {
+    text-align: center;
+    font-size: 8vw;
+    padding: 2vh 3vw;
+    color: white;
+    background-color: darkgray;
+    border-radius: 5vw 5vw 0px 0px;
+  }
+  .card h3 {
+    font-size: 5vw;
+    padding: 2vw;
+    background-color: lightgray;
+  }
+  .card p {
+    padding: 2vw;
+    text-align: justify;
+    border: 1px solid darkgray;
+    font-size: 4vw;
+  }
+  .card .card-bottom {
+    font-size: 6vw;
+    border-radius: 0px 0px 5vw 5vw;
+  }
+  main {
+    text-align: justify;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+  footer h3 {
+    font-size: 3vw;
+  }
+}
+/*
+Tablet
+*/
+@media (min-width: 500px) {
+  header nav {
+    flex-direction: row;
+  }
+}
+/*
+Desktop
+*/
+@media (min-width: 800px) {
+  header nav a {
+    font-size: 2vw;
+  }
+  header article {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  header article section {
+    width: 50vw;
+  }
+  header article section h2 {
+    padding-top: 1vh;
+    font-size: 4vw;
+  }
+  header article section img {
+    border-radius: 50%;
+  }
+  .card h2,
+  .card .card-bottom {
+    font-size: 4vw;
+  }
+  .card h3 {
+    font-size: 3vw;
+  }
+  .card p {
+    font-size: 2.5vw;
+  }
+  main .skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main .skills section {
+    width: 30vw;
+  }
+  main .skills section h3 {
+    width: 100%;
+  }
+  footer h3 {
+    font-size: 1.5vw;
+  }
+}
